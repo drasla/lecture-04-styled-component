@@ -14,6 +14,10 @@ const Text = styled.span`
     color: white;
 `;
 
+const Circle = styled(Box)`
+    border-radius: 50px;
+`;
+
 function App() {
   return (
     <Father>
@@ -21,6 +25,7 @@ function App() {
             <Text>Hello World</Text>
         </Box>
         <Box bgColor={"tomato"}/>
+        <Circle bgColor={"yellow"} />
     </Father>
   )
 }
