@@ -18,9 +18,17 @@ const Circle = styled(Box)`
     border-radius: 50px;
 `;
 
+const Input = styled.input.attrs({ required: true })`
+    background-color: tomato;
+`;
+
 function App() {
   return (
-    <Father>
+    <Father as={"header"}>
+        <Input />
+        <Input />
+        <Input />
+        <Input />
         <Box bgColor={"teal"}>
             <Text>Hello World</Text>
         </Box>
